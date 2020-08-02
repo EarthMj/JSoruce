@@ -1,0 +1,14 @@
+<body>
+	<%
+		String path1 = request.getSession().getServletContext().getRealPath("");
+		String path2 = request.getServletContext().getRealPath("/");
+		
+		String path3 = request.getServletContext().getRealPath("main.jsp");
+		String path4 = request.getServletContext().getRealPath("board/user.jsp");
+	%>
+	<h1>path1 : <%= path1 %></h1>
+	<h1>path2 : <%= path2 %></h1>
+	<h1>path3 : <%= path3 %></h1>
+	<h1>path4 : <%= path4 %></h1>
+</body>
+</html>
