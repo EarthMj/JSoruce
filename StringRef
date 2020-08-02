@@ -1,0 +1,21 @@
+public class Test {
+
+	public static void main(String[] args) {
+		StringBuilder str = new StringBuilder("안녕,세상");		
+		System.out.println("기본 값 =  " + str);
+		
+		TestIns testIns = new TestIns();
+		testIns.setTest(str);
+		System.out.println("바뀐 값 =  " + str);
+		
+	}
+}
+
+class TestIns{
+	
+	public void setTest(StringBuilder str) {
+    // StringBuilder 초기화
+		str.setLength(0);    
+		str.append("세상, 안녕");
+	}
+}
